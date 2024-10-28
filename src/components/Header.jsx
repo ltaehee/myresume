@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import '../styles/header.css';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -7,7 +8,7 @@ const Header = () => {
     navigate(path);
   }
   return (
-    <header className='app-header'>
+    <header className='appHeader'>
       <button onClick={() => handleClickMenu("/")}>home</button>
       <button onClick={() => handleClickMenu("/portfolio")}>portfolio</button>
       <button onClick={() => handleClickMenu("/contact")}>contact</button>
